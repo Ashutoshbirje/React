@@ -1,0 +1,38 @@
+/* Styling for the Usercontainer */
+.Usercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 400px;
+    margin: 20px auto; /* Center alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #bbb; /* Placeholder color */
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url('path/to/photo.jpg'); /* Replace with actual photo URL */
+    background-size: cover;
+    background-position: center;
+}
+
+#user-desc {
+    font-size: 16px;
+    color: #555; /* Medium text color for readability */
+    line-height: 1.5; /* Improve text readability */
+}
