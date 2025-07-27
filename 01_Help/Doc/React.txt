@@ -3,7 +3,7 @@
 Introducion:
 
 --> Js Library 
---> Used To create UI
+--> Used To create complex UI and sync state and DOM 
 --> 2013 Open-source Library that have pre-bulit functionality
 --> Componet base architecture
 --> Componet / moduler code (Reusable piece of code / function / Custom Html creater)
@@ -28,19 +28,22 @@ Need:
 
 About:
 
---> State maintainance
+--> State / UI maintainance
+--> JSX 
 --> Props 
 --> Hooks
 
 Alternate:
 
---> Angular / Vue / React
+--> Angular / Vue / React / Next JS / Remix 
 
 History:
 
 --> Facebook >> 2011
 
-Documentation : https://react.dev/
+Documentation : 
+https://react.dev/
+https://reactrouter.com/
 
 Setup: 
 
@@ -89,7 +92,7 @@ Setup:
 --> M2
   1) npm create vite@latest (name_of_ract_app)
   2) cd (name_of_ract_app)
-  3) npm install
+  3) npm install / npm i 
   4) npm run dev
   5) Ctrl + C (exit)
 
@@ -120,6 +123,12 @@ Replit / sandbox
 Syntex:
 
 # Enter : rfce
+
+React Fiber 
+
+https://github.com/acdlite/react-fiber-architecture
+https://www.geeksforgeeks.org/reactjs/what-is-react-fiber/
+
 
 Props:
 
@@ -196,7 +205,7 @@ Hooks:
 
  # Step:
 --> Create context
---> Provide  (we can use multiple provider  )
+--> Provide  (we can use multiple provider)
 --> Consume
 
 4) useRef
@@ -225,6 +234,14 @@ React Routing:
 
 --> CMD : npm i -D react-router-dom
 
+useLoaderData
+loader 
+useparam 
+outlet 
+nav / navlink
+
+
+
 How to pass route parameter in Routing:
 
 Nested routing:
@@ -232,6 +249,11 @@ Nested routing:
 
 Redux:
 
+--> State management (Redux / Redux Toolkit / zustand / context API )
+
 
 
 https://www.udemy.com/course/the-ultimate-react-course/?couponCode=LEARNNOWPLANS
+
+
+
