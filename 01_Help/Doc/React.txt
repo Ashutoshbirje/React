@@ -1,65 +1,54 @@
 # React:
 
-Introducion:
+# Introducion:
 
---> Js Library 
---> Used To create complex UI and sync state and DOM 
+--> Front-end Js Library 
 --> 2013 Open-source Library that have pre-bulit functionality
---> Componet base architecture
---> Componet / moduler code (Reusable piece of code / function / Custom Html creater)
---> It creates virtual DOM
+--> Componet base architecture / Direct Approach / Declarative Approach
+--> Componet / Moduler code (Reusable piece of code / Function / Custom Html creater)
+--> It creates virtual DOM in memory 
 
-JSX:
+# History:
 
---> JS XML
---> HTML code inside JS
+--> Facebook >> 2011 >> Jordan Walke
 
-Need:
+# Need:
+
+--> Used To create complex user interfaces 
+--> Used To build single-page application 
+--> Used To create reusable UI components
+
+# Documentation: 
+
+--> https://react.dev/
+--> https://reactrouter.com/
 
 # JS 
+
 --> Imperative Approach
 --> step by stap
 
 # React
---> Direct Approach / Declarative Approach
+
 --> Easy Reuasability / Readability / maintainance
---> SPA (Single page application) Approach
 --> It loads one single HTML pages and make change dynamically to create other eleemnt
 
-About:
+# JSX:
 
---> State / UI maintainance
---> JSX 
---> Props 
---> Hooks
+--> JS XML
+--> HTML code inside JS
 
 Alternate:
 
 --> Angular / Vue / React / Next JS / Remix 
 
-History:
+# Installation: 
 
---> Facebook >> 2011
-
-Documentation : 
-https://react.dev/
-https://reactrouter.com/
-
-Setup: 
-
-///////////// M 1 ////////////// 
+/////////////////////// M 1 ////////////////////////
 
 # Extension:
 
 --> es7 Redux React Code
-
-# STEPS:
-
---> Check Node is Up to Date
---> Install VScode
---> Create a new folder and move inside it
---> Create React app(2 Methods)
---> Run app
 
 # Node SetUp
 
@@ -110,24 +99,42 @@ Setup:
   11) JSX (HTML code inside JS) >> react >> html
   12) Export and import
 
-///////////// M 2 ////////////// 
+/////////////////////// M 2 ////////////////////////
 
-Replit / sandbox
+--> https://github.com/thepranaygupta/html-tailwind-css-starter-pack
 
-///////////// M 3 ////////////// 
+--> git clone https://github.com/thepranaygupta/html-tailwind-css-starter-pack.git
 
-# https://github.com/thepranaygupta/html-tailwind-css-starter-pack
+# Syntex:
 
-# git clone https://github.com/thepranaygupta/html-tailwind-css-starter-pack.git
+--> Enter : rfce
 
-Syntex:
+////////////////////////////////////////////////////
 
-# Enter : rfce
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-React Fiber 
+function Hello(props) {
+  return <h1>Hello World!</h1>;
+}
+
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container);
+root.render(<Hello />);
+
+////////////////////////////////////////////////////
+
+# React Fiber 
 
 https://github.com/acdlite/react-fiber-architecture
 https://www.geeksforgeeks.org/reactjs/what-is-react-fiber/
+
+
+
+// React JSX to be continue ... 
+
+
+
 
 
 Props:
