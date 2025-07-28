@@ -22,6 +22,7 @@
 
 --> https://react.dev/
 --> https://reactrouter.com/
+--> https://vite.dev/
 
 # JS 
 
@@ -109,8 +110,6 @@ Alternate:
 
 --> Enter : rfce
 
-////////////////////////////////////////////////////
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -122,41 +121,54 @@ const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
 root.render(<Hello />);
 
-////////////////////////////////////////////////////
-
 # React Fiber 
 
 https://github.com/acdlite/react-fiber-architecture
 https://www.geeksforgeeks.org/reactjs/what-is-react-fiber/
 
 
+# React components
 
-// React JSX to be continue ... 
+--> Function that returns HTML elements 
+--> Independent and reusable codes 
+--> Class components and Function components
+--> Components name always starts with capital letter 
 
+# Components Implementation 
 
+--> Component in Component 
+--> Component in Files
 
+# Life Cycle of Components 
 
+ 1) Mounting 
+--> Rendering element into DOM
 
-Props:
+ 2) Updating 
+--> Update DOM structure based in user action 
 
---> parent se child ko data pass karna
+ 3) Unmounting 
+--> Removal of component from DOM 
 
-// How to send text / image
+# Props: (Properties)
 
-// How to send children / function
+--> Props are arguments passed into React components 
+--> Data passing from Parent to Child 
 
-Props drilling
+# Props drilling
 
---> data parent se child tak line meai send hota heai 
+--> Data parent se child tak line meai send hota heai 
 --> P --> c1 --> c2 --> c3 
 
-State Lifting
+# State Lifting
 
 --> child se parent ki data pass karna
 --> It also help to pass data to siblings
 
 // maintain single state at parent the pass function and value to Props
 
+
+To be continue Events / cnd / lists / forms / router / Memo  --> 
 
 Condtional rendering
 
@@ -165,13 +177,8 @@ Condtional rendering
 3) logical Operator
 4) Early return 
 
-Componet:
 
-
-Event:
-
-
-Hooks:
+# Hooks:
 
 --> Addtional functionallity
 --> Must be used in functional component
