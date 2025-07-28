@@ -215,18 +215,39 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 --> Used to improve performance 
 
 # Hooks:
-
+ 
 --> Addtional functionallity
 --> Must be used in functional component
 
+# Major Rules 
+
+--> Hookes can only be called inside React function components 
+--> Hookes can only be called at the top level of a component 
+--> Hooks can not be conditional 
+
 1) usestate
+
 --> It allows us to track state in a function component 
+--> State refers to data / property that needs to be track in an application 
+--> State can be string, numbers, booleans, arrays, object 
+
+--> import { useState } from "react";
+
+ # Syntex 
+
+--> const [Curr_state, function_to_update_state] = useState(Initial_Value)
 
 2) useEffect
 --> React hook used to generate side effect
 --> On happening certain event we are going to handle
+--> Used to synchronize a component with an external system 
+
+--> import { useEffect } from "react";
 
  # Syntex 
+
+--> useeffect(<function>,<dependency>)
+
 --> useEffect(() => {
     first
   
@@ -234,6 +255,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
       second
     }
   }, [third])
+
 --> First : Side-effect function
 --> second : cleanup function
 --> third : comman seprated dependancy list
@@ -246,17 +268,33 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 --> Multieffect
 
 3) useContext
- 
- # Need:
- Problem
+
+--> Global State managemnt 
+--> It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
+
+# Problem
 --> P --> c1 --> c2 --> c3 
- Solution
+
+# Solution
 --> P --> c3
 
- # Step:
+# Step:
+
 --> Create context
 --> Provide  (we can use multiple provider)
+--> Pass Valule 
 --> Consume
+
+# Syntax
+
+--> const UserContext = createContext()
+--> <UserContext.Provider value={user}>
+      <Component2 />
+    </UserContext.Provider>
+--> <Component3 /> -> <Component4 /> -> <Component5 /> -> <Component6 /> -> 
+--> const user = useContext(UserContext); --> access user in Component6
+
+To Be continue ... 
 
 4) useRef
 --> It return object contain (.current)
@@ -280,7 +318,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 --> Used to avoid re-render of child component
 --> Used to handle expensive operation
 
-
+# Syntax
+--> const cacheFnx = useCallback(fnx, dependency_array)
 
 useLoaderData
 loader 

@@ -6,6 +6,20 @@ const App = () => {
 
   const [count, setCount] = useState(0);
 
+  // Object as state 
+  const [car, setCar] = useState({
+    brand: "Ford",
+    model: "Mustang",
+    year: "1964",
+    color: "red"
+  });
+  
+  const updateColor = () => {
+    setCar(previousState => {
+      return { ...previousState, color: "blue" }
+    });
+  }
+  
   const cardStyle = {
     textAlign: 'center',
     backgroundColor: '#ffffff',
@@ -36,7 +50,21 @@ const App = () => {
       >
         count is {count}
       </button>
+      
+      {/* Object as state  */}
+      <h1>My {car.brand}</h1>
+      <p>
+        It is a {car.color} {car.model} from {car.year}.
+      </p>
+
+      {/* // update object state  */}
+      <button
+        type="button"
+        onClick={updateColor}
+      >Blue</button>
+
     </div>
+       
   );
 };
 

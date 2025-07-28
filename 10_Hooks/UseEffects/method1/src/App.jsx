@@ -13,7 +13,6 @@ const App = () => {
   settotal(total +1);
  }
 
-
 // Type 1 : Run on every render
 //  useEffect(() => {
 //   alert("It will Run on every render")
