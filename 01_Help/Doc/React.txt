@@ -51,7 +51,7 @@ Alternate:
 
 --> es7 Redux React Code
 
-# Node SetUp
+# Node SetUp:
 
 1) install node (https://nodejs.org/en)
    
@@ -59,7 +59,7 @@ Alternate:
    cmd : node -v / --version
    cmd : npm -v / --version
 
-# React SetUp
+# React SetUp:
 
 --> M1
   1) npm uninstall -g create-react-app.
@@ -167,16 +167,18 @@ https://www.geeksforgeeks.org/reactjs/what-is-react-fiber/
 
 // maintain single state at parent the pass function and value to Props
 
+# React Event 
 
-To be continue Events / cnd / lists / forms / router / Memo  --> 
+--> Based on user action perform various taskl
 
-Condtional rendering
+# Condtional rendering
 
 1) if-else
 2) ternary Operator
 3) logical Operator
 4) Early return 
 
+To be continue FORMS 
 
 # Hooks:
 
