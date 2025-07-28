@@ -178,7 +178,41 @@ https://www.geeksforgeeks.org/reactjs/what-is-react-fiber/
 3) logical Operator
 4) Early return 
 
-To be continue FORMS 
+# React Forms 
+
+--> It allows users to interact with the web page 
+--> Whenever we submit form it is handle by the components 
+--> This data is stored into component state 
+--> To control action use event handler and state 
+
+# React Routing:
+
+--> CMD : npm i -D react-router-dom
+
+# Syntex  (Entire Window)
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+<BrowserRouter>
+  <Routes>
+    <Route path="Path_of_compo1" element={<component/>}>
+      <Route path="Path_of_compo1/Location_of_compo" element={<component />} />
+    </Route>
+    <Route path="Path_of_compo2" element={<component />} />
+    <Route path="*" element={<PageNotFound />} />
+  </Routes>
+</BrowserRouter>
+
+# Syntex  (Specific Part of Window)
+
+ <Outlet/>
+ <Link to="Path_of_compo1/>
+ <NavLink to="Path_of_compo1">
+ 
+# React Memo 
+
+--> Skip rendering of component if it's props have not changed 
+--> Used to improve performance 
 
 # Hooks:
 
@@ -246,9 +280,7 @@ To be continue FORMS
 --> Used to avoid re-render of child component
 --> Used to handle expensive operation
 
-React Routing:
 
---> CMD : npm i -D react-router-dom
 
 useLoaderData
 loader 
