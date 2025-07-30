@@ -126,7 +126,6 @@ root.render(<Hello />);
 https://github.com/acdlite/react-fiber-architecture
 https://www.geeksforgeeks.org/reactjs/what-is-react-fiber/
 
-
 # React components
 
 --> Function that returns HTML elements 
@@ -169,7 +168,7 @@ https://www.geeksforgeeks.org/reactjs/what-is-react-fiber/
 
 # React Event 
 
---> Based on user action perform various taskl
+--> Based on user action perform various task
 
 # Condtional rendering
 
@@ -209,6 +208,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
  <Link to="Path_of_compo1/>
  <NavLink to="Path_of_compo1">
  
+--> useLoaderData
+--> loader 
+--> useparam 
+--> outlet 
+--> nav / navlink
+
 # React Memo 
 
 --> Skip rendering of component if it's props have not changed 
@@ -272,20 +277,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 --> Global State managemnt 
 --> It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
 
-# Problem
+ # Problem
 --> P --> c1 --> c2 --> c3 
 
-# Solution
+ # Solution
 --> P --> c3
 
-# Step:
+ # Step:
 
 --> Create context
 --> Provide  (we can use multiple provider)
 --> Pass Valule 
 --> Consume
 
-# Syntax
+--> import { useContext } from "react";
+
+ # Syntax
 
 --> const UserContext = createContext()
 --> <UserContext.Provider value={user}>
@@ -294,44 +301,64 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 --> <Component3 /> -> <Component4 /> -> <Component5 /> -> <Component6 /> -> 
 --> const user = useContext(UserContext); --> access user in Component6
 
-To Be continue ... 
+4) useRef 
 
-4) useRef
 --> It return object contain (.current)
+--> It return only one item 
+--> It allows to persist values between renders 
 
  # Usecase
---> variable that persist value across re-render
---> access DOM eleemnt directly 
+--> Variable that persist value across re-render
+--> Access DOM eleemnt directly 
+--> Keep track of previous state 
+
 -> ref create 
--> ref link to eleemnt
+-> ref link to element
 -> ref.current 
 
+--> import { useRef } from "react";
+
 5) useMemo
+
+--> returns memorized value 
 --> Store data for after uses when it is needed
 
+--> import { useMemo } from "react"
 
 6) useNavigation
---> 
+
+
+
 
 7) usecallback
+
+--> return memorized callback function
 --> It catches function defination so that function will never created again and again
 --> Used to avoid re-render of child component
 --> Used to handle expensive operation
 
-# Syntax
+--> import { usecallback } from "react"
+
+ # Syntax
 --> const cacheFnx = useCallback(fnx, dependency_array)
 
-useLoaderData
-loader 
-useparam 
-outlet 
-nav / navlink
+
+8) useReducer 
+
+--> It allows for custom logic 
+
+--> import { useReducer } from "react" 
+
+ # Syntax
+
+--> useReducer(<reducer>, <initialState>)
 
 
+9) Custom Hooks 
 
-How to pass route parameter in Routing:
+--> When we have certain logic that needs to be used by multiple components we extract that logic to custom hook
 
-Nested routing:
+
 
 
 Redux:
