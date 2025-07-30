@@ -359,12 +359,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 --> When we have certain logic that needs to be used by multiple components we extract that logic to custom hook
 
 
-
-
 Redux:
 
 --> State management (Redux / Redux Toolkit / zustand / context API )
-
 
 
 https://www.udemy.com/course/the-ultimate-react-course/?couponCode=LEARNNOWPLANS
