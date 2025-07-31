@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 
 function Component1() {
   const [user, setUser] = useState("Jesse Hall");
-
   return (
     <>
       <h1>{`Hello ${user}!`}</h1>

@@ -287,7 +287,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 --> Create context
 --> Provide  (we can use multiple provider)
---> Pass Valule 
+--> Pass Value 
 --> Consume
 
 --> import { useContext } from "react";
@@ -359,10 +359,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 --> When we have certain logic that needs to be used by multiple components we extract that logic to custom hook
 
 
+
+
+--> State management (Redux / Redux Toolkit / React-Redux / zustand / context API )
+--> Pass data in organized way 
+
 Redux:
 
---> State management (Redux / Redux Toolkit / zustand / context API )
-
+Context API:
 
 https://www.udemy.com/course/the-ultimate-react-course/?couponCode=LEARNNOWPLANS
 

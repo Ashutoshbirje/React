@@ -1,10 +1,10 @@
 import React, {useContext} from 'react'
 import UserContext from '../context/UserContext'
-
+// Access Data 
 function Profile() {
     const {user} = useContext(UserContext)
     
-    if (!user) return <div>please login</div>
+    if (!user) return <div>Please Login</div>
 
     return <div>Welcome {user.username}</div>
 }
