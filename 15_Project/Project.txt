@@ -1,0 +1,84 @@
+1. Beginner Projects (JSX, useState, Events, Props)
+# Emoji Interpreter
+  - Input emoji → show meaning (from a predefined dictionary).
+  - Covers: state, object lookup, event handling.
+
+# Like Button Component
+  - Click to toggle like/unlike and count.
+  - Covers: useState, event handling.
+
+# Random Quote Display (No API)
+  - Show a new quote from a static list on each button click.
+  - Covers: props, conditional rendering.
+
+# Greeting Based on Time
+  - Display “Good Morning / Afternoon / Night” dynamically.
+  - Covers: Date object, dynamic JSX.
+
+# Character Counter
+  - Input text and show character count live.
+  - Covers: controlled components.
+
+2. Intermediate Projects (Lists, LocalStorage, Props Drilling, useEffect)
+# Bookmark Manager
+  - Save/remove URLs to local storage.
+  - Covers: form handling, localStorage, array state.
+
+# Accordion Component (FAQ Style)
+  - Expand/collapse individual questions.
+  - Covers: array state, conditional rendering.
+
+# Text Case Converter
+  - Convert to uppercase/lowercase/title case with one click.
+  - Covers: string manipulation, controlled inputs.
+
+# Progress Bar
+  - Simulate a progress bar with button clicks.
+  - Covers: inline styles, dynamic updates.
+
+# Star Rating UI
+  - Click on stars to rate an item (1–5 stars).
+  - Covers: conditional class rendering, hover events.
+
+3. Advanced Concepts (Hooks, Context, Routing, Composition)
+# Stopwatch with Laps
+  - Basic timer + record laps.
+  - Covers: useRef, setInterval, cleanup.
+
+# Search Filter UI
+  - Filter a list as user types.
+  - Covers: useEffect, derived state, list rendering.
+
+# Multi-Step Form (No Backend)
+  - Step-wise form (e.g., personal info → address → confirm).
+  - Covers: component composition, state passing.
+
+# Notification Badge Component
+  - Show count badge (like unread messages).
+  - Covers: props, conditionals, reusable UI.
+
+# Scroll-To-Top Button
+  - Button appears on scroll, clicks to scroll up.
+  - Covers: useEffect, scroll events.
+
+4. Challenge/Pattern-Based
+# Tab Component (Horizontal Tab Switcher)
+  - Click tab headers to change content below.
+  - Covers: component reuse, conditional render.
+
+# Password Strength Indicator
+  - Shows weak/medium/strong based on input.
+  - Covers: regex, class logic, input events.
+
+# Random Background Image on Refresh
+  - Show a different image each page load.
+  - Covers: side effects, DOM style update.
+
+# Color Picker Tool
+  - Use <input type="color"> and apply it to background.
+  - Covers: forms, styling with dynamic values.
+
+# Clipboard Copy Button
+  - Click to copy text to clipboard.
+  - Covers: navigator.clipboard, refs.
+
